@@ -40,12 +40,7 @@
 
   @include media-min ($lg) {
     &__social-list {
-      justify-content: flex-start;
-    }
-
-    &__logo-container {
-      display: flex;
-      justify-content: flex-end;
+      --icon-size: 50px;
     }
   }
 }

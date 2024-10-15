@@ -6,12 +6,53 @@
 
   &__container {
     justify-content: space-between;
+    align-items: center;
   }
 
-  &__text {
-    font-size: 18px;
-    margin: 0;
-    text-transform: uppercase;
-    text-align: center;
+  &__contact {
+    font-size: 28px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  &__socials {
+    --icon-size: 40px;
+
+    @include list-reset;
+
+    display: flex;
+    justify-content: center;
+
+    &>* {
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @include media-min ($lg) {
+
+    &__contact {
+      transition: background-color .2s ease-in-out;
+
+      &:hover {
+        background-color: var(--orange-70-color);
+      }
+    }
+
+    &__socials {
+      --icon-size: 50px;
+    }
+  }
+
+  @include media-min($xxl) {
+    &__contact {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
   }
 }
