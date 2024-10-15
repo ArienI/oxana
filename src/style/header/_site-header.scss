@@ -1,0 +1,42 @@
+.site-header {
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+  &__menu {
+    justify-content: space-between;
+  }
+
+  &__social-list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+    --icon-size: 40px;
+
+    &>* {
+      display: flex;
+      margin-left: 5px;
+    }
+  }
+
+  &__logo-link {
+    flex-shrink: 0;
+
+    & img {
+      width: 130px;
+    }
+  }
+
+  @include media-min ($md) {
+    &__logo-link {
+
+      & img {
+        width: 200px;
+      }
+    }
+
+    &__social-list {
+      --icon-size: 60px;
+      margin-left: 10px;
+    }
+  }
+}
