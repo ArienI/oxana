@@ -10,7 +10,7 @@
   }
 
   &__contact {
-    font-size: 28px;
+    font-size: 18px;
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--orange-color);
@@ -34,18 +34,24 @@
     }
   }
 
-  @include media-min ($lg) {
-
+  @include media-min ($md) {
     &__contact {
+      font-size: 22px;
+    }
+
+    &__socials {
+      --icon-size: 50px;
+    }
+  }
+
+  @include media-min ($lg) {
+    &__contact {
+      font-size: 24px;
       transition: background-color .2s ease-in-out;
 
       &:hover {
         background-color: var(--orange-70-color);
       }
-    }
-
-    &__socials {
-      --icon-size: 50px;
     }
   }
 
