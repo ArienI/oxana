@@ -677,8 +677,6 @@ a {
 }
 @media (min-width: 1600px) {
   .timetable__contact {
-    margin-bottom: 40px;
-
     font-size: 28px;
   }
 }
