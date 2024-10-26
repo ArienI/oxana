@@ -2,14 +2,14 @@
 
   <div class="site-header__menu container  d-flex">
 
-    <a class="site-header__logo-link" href="#">
+    <span class="site-header__logo-link">
       <img width="130" src="img/Logo.svg" alt="Oxana">
-    </a>
+    </span>
 
     <ul class="site-header__social-list">
-      @include('../social-link/social-link.html', {icon: 'tg'})
-      @include('../social-link/social-link.html', {icon: 'wb'})
-      @include('../social-link/social-link.html', {icon: 'vb'})
+      @include('../social-link/social-link.html', {icon: 'tg', link: 'https://t.me/+38269738599'})
+      @include('../social-link/social-link.html', {icon: 'wb', link: 'https://wa.me/38269738599'})
+      @include('../social-link/social-link.html', {icon: 'vb', link: 'viber://chat?number=%2B38269738599'})
     </ul>
   </div>
 </header>
